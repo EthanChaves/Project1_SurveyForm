@@ -1,0 +1,73 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1495578942200-c5f5d2137def?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80);
+  color:white;
+  font-family: sans-serif;
+  height: 135vh;
+  width: 100%;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  font-size: 18px;
+}
+
+form {
+  background-color: darkcyan;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border: 10px double white;
+}
+
+form p {
+  min-height: 1.5em;
+  margin: 0.5em 0;
+  margin-bottom: 0;
+}
+
+input[type="submit"] {
+  display: block;
+  background-color: rgb(41, 41, 76);
+  border-color: white;
+  color: white;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  min-width: 300px;
+}
+
+select {
+  min-height: 2em;
+  margin: 0.5em 0;
+}
+
+textarea {
+  min-width: 100%;
+  min-height: 10rem;
+}
+
+label {
+  display: block;
+}
+
+.personalInfo input {
+  min-height: 1.5em;
+  margin: 0.5em 0;
+}
+
+.personalInfo label:first-of-type {
+  margin: 0;
+}
+
+.personalInfo p, .personalInfo input {
+  width: 100%;
+}
+
+#title, #description {
+  text-align: center;
+  margin: 1rem 0;
+}

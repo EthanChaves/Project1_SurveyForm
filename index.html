@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is a form to apply for our customer service position.</p>
+  <form id="survey-form">
+    <fieldset class="personalInfo">
+      <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+      <label id="number-label" for="number">Age: <input id="number" name="age" type="number" min="18" max="120" placeholder="Enter your age" required></label>
+      <p>Select your province:</p>
+      <label for="dropdown"><select id="dropdown" name="province" required>
+        <option disabled selected value>Select a province</option>
+        <option value="sanJose">San Jose</option>
+        <option value="alajuela">Alajuela</option>
+        <option value="cartago">Cartago</option>
+        <option value="heredia">Heredia</option>
+        <option value="puntarenas">Puntarenas</option>
+        <option value="guanacaste">Guanacaste</option>
+        <option value="limon">Limon</option>
+      </select></label>
+    </fieldset>
+    <fieldset>
+      <p>Which site do you prefer?</p>
+      <label for="escazu"><input id="escazu" name="sites" type="radio" value="escazu" checked> Escazu, San Jose</label>
+      <label for="barreal"><input id="barreal" name="sites" type="radio" value="barreal" > Barreal, Heredia</label>
+      <label for="coyol"><input id="coyol" name="sites" type="radio" value="coyol"> Coyol, Alajuela</label>
+      <label for="liberia"><input id="liberia" name="sites" type="radio" value="liberia"> Liberia, Guanacaste</label>
+    </fieldset>
+    <fieldset>
+      <p>What do you prefer? <span>(You can choose one or both options)</span></p>
+      <label for="wfh">
+        <input id="wfh" name="wfh" type="checkbox" value="wfh"checked> Work from home
+      </label>
+      <label for="site">
+        <input id="site" name="site" type="checkbox" value="site"> Work on site
+    </fieldset>
+    
+    <fieldset>
+      <label for="comments">Tell us about yourself <span>(optional)</span>:
+        <textarea name="comments" id="comments" placeholder="I consider myself..."></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
