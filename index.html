@@ -9,11 +9,11 @@
 <body>
   <h1 id="title">Survey Form</h1>
   <p id="description">This is a form to apply for our customer service position.</p>
-  <form id="surveyForm">
-    <fieldset>
-      <label id="name-label" for="name">Name: <input id="name" name="name" type="text" value="name" placeholder="Enter your name" required></label>
-      <label id="email-label" for="email">Email: <input id="email" name="email" type="email" value="email" placeholder="Enter your email" required></label>
-      <label id="number-label" for="age">Age: <input id="age" name="age" type="number" value="age" min="18" max="120" placeholder="Enter your age" required></label>
+  <form id="survey-form">
+    <fieldset class="personalInfo">
+      <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+      <label id="number-label" for="number">Age: <input id="number" name="age" type="number" min="18" max="120" placeholder="Enter your age" required></label>
       <p>Select your province:</p>
       <label for="dropdown"><select id="dropdown" name="province" required>
         <option disabled selected value>Select a province</option>
@@ -28,12 +28,11 @@
     </fieldset>
     <fieldset>
       <p>Which site do you prefer?</p>
-      <label for="escazu"><input id="escazu" name="sites" type="radio" checked> Escazu, San Jose</label>
-      <label for="barreal"><input id="barreal" name="sites" type="radio"> Barreal, Heredia</label>
-      <label for="coyol"><input id="coyol" name="sites" type="radio"> Coyol, Alajuela</label>
-      <label for="liberia"><input id="liberia" name="sites" type="radio"> Liberia, Guanacaste</label>
+      <label for="escazu"><input id="escazu" name="sites" type="radio" value="escazu" checked> Escazu, San Jose</label>
+      <label for="barreal"><input id="barreal" name="sites" type="radio" value="barreal" > Barreal, Heredia</label>
+      <label for="coyol"><input id="coyol" name="sites" type="radio" value="coyol"> Coyol, Alajuela</label>
+      <label for="liberia"><input id="liberia" name="sites" type="radio" value="liberia"> Liberia, Guanacaste</label>
     </fieldset>
-
     <fieldset>
       <p>What do you prefer? <span>(You can choose one or both options)</span></p>
       <label for="wfh">
@@ -45,9 +44,9 @@
     
     <fieldset>
       <label for="comments">Tell us about yourself <span>(optional)</span>:
-        <textarea name="comments" id="comments" placeholder="I consider myself..." cols="40" rows="10"></textarea></label>
+        <textarea name="comments" id="comments" placeholder="I consider myself..."></textarea></label>
     </fieldset>
-    <input type="submit" value="Submit">
+    <input id="submit" type="submit" value="Submit">
   </form>
 </body>
 </html>
